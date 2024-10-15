@@ -11,6 +11,15 @@ let additionalProperties = {
   hobbies: ["Football", "Coding"],
 };
 
-// Start coding here
+
+let newStudentProfile = { ...studentProfile, ...additionalProperties };
 
 console.log(newStudentProfile);
+
+// function newStudentProfile (newProfile,newAdditional) {
+// return {
+//          ...newProfile,
+//          ...newAdditional
+//        };
+// }
+// console.log(newStudentProfile(studentProfile, additionalProperties));
